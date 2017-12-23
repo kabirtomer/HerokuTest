@@ -1,0 +1,15 @@
+<!-- templates/post_delete.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+ {% if post.author.username == user.username %}
+    <h1>Delete post</h1>
+    <form action="" method="post">{% csrf_token %}
+      <p>Are you sure you want to delete "{{ post.title }}"?</p>
+      <input type="submit" value="Confirm" />
+    </form>
+    {% else %}
+    <h1>ACCESS DENIED</h1>
+    {% endif %}
+    
+{% endblock %}

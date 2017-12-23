@@ -1,0 +1,193 @@
+body{
+	font-family: courier, monospace;
+	    background-image: url(./dark.png);
+
+    background-attachment: fixed;
+}
+
+header{
+}
+
+.container{
+	width : 60%;
+	margin: auto;
+	min-width: 220px;
+    background-color: #dddddd;
+    border: 1px solid #aaaaaa;
+    position: relative;
+    padding: 1%;
+    background-image: url(./lines.png);
+}
+
+.container,
+.container::before,
+.container::after {
+  box-shadow: 2px 1px 1px rgba(0,0,0,0.15);
+}
+
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+    border: 1px solid #aaaaaa;
+
+}
+
+header{
+	margin : auto;
+	width: 90%;
+}
+
+.container::before {
+  left: 7px;
+  top: 5px;
+  z-index: -1;
+}
+
+.container::after {
+  left: 12px;
+  top: 10px;
+  z-index: -2;
+}
+
+.field_wrap{
+	height: 20px;
+	width: 90%;
+	overflow: hidden;
+}
+
+.main{
+	text-align: center;
+	background-image: url(./paper_fibers.png);
+	border: 4px solid black;
+	width: 90%;
+	margin: 20px auto;
+	border-radius: 15px;
+	padding: 12px 0px;
+	min-width: 200px;
+}
+
+#input_row{
+	text-align: center;
+	margin-top: 15px;
+	padding-left: 12px;
+}
+
+#entry_box{
+	  border-top: 1px dotted #ccc;	
+
+	text-align: left;
+}
+
+.heading{
+	text-align: center;
+	margin: 0px auto;
+	width : 200;
+	font-size: 28px;'
+    font-style: italic;
+    font-weight: bold;
+	font-family: courier, monospace;
+    }
+
+.close_button{
+	text-align: center;
+	line-height: 24px;
+	margin: 0px 5px 2px 0px;
+	width : 25px;
+	height: 24px;
+    border-radius: 5px;
+    border: 1px solid black;
+	background-color: #dd2e29;
+	display: block;
+	float: right;
+	color:black;
+	opacity: 0;
+
+}
+.edit_button{
+	text-align: center;
+	line-height: 24px;
+	margin: 0px 5px 2px 0px;
+	width : auto;
+	height: 24px;
+    border-radius: 5px;
+    border: 1px solid black;
+	background-color: #ddffff;
+	display: block;
+	float: right;
+	color:black;
+	opacity: 0;
+
+}
+.main div.ticked{
+   text-decoration: line-through;
+   color : #000000;
+   background-color: grey
+   
+}
+
+.close_button:hover{
+		background-color: red;
+
+}
+
+
+div.entry{
+	background-image: url(./paper_fibers.png);
+	color: #000066;
+	font-family: courier, monospace;
+	margin: 0px 0px;
+	padding: 0px 0px 0px 0px;
+  border-bottom: 1px dotted #ccc;	
+	overflow: hidden;
+}
+
+div.entry .lines {
+  border-left: 1px solid #ffaa9f;
+  border-right: 1px solid #ffaa9f;
+  width: 2px;
+  height: 28px;
+  float: left;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+div.entry:hover{
+	background-color: #cccccc;
+}
+
+div.entry.ticked:hover{
+	background-color: grey;
+}
+
+input{
+	margin-right: 15px; 
+	width: 50%;
+	display:inline-block;
+
+}
+
+#input_row button{
+	margin-left: 0px;
+	background-color: #8899DD;
+	padding: 3px 5px 3px 3px;
+	display: inline-block;
+	border-radius: 2px;
+	border: 2px solid black;
+}
+
+#input_row button:hover {
+	background-color: #6677AA;
+}
+
+
+
+
+#input_row .dark_button:hover{
+	background-color: #556699;
+}
+
+
